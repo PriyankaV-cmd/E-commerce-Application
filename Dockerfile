@@ -5,7 +5,7 @@ FROM tomcat:9.0-jdk11
 COPY target/ecommerce-app-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ecommerce-app-1.0-SNAPSHOT.war
 
 # Expose port
-EXPOSE 8080
+EXPOSE -p 8080
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
