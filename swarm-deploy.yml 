@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  ecommerce-app:
+    image: your-dockerhub-user/ecommerce-app:latest
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+      update_config:
+        parallelism: 2
+        failure_action: rollback
+    ports:
+      - "8080:8080"

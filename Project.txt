@@ -1,2 +1,12 @@
 E-Commerce Application Deployment
 Technology: GitHub, Maven, Jenkins, Docker, Docker Swarm, Tomcat 
+
+E-commerce-Application/
+├── src/main/java/com/ecommerce/App.java      # Sample servlet
+├── src/main/webapp/index.jsp                 # JSP page
+├── src/main/webapp/WEB-INF/web.xml           # Servlet mapping
+├── pom.xml                                   # Maven build config
+├── Dockerfile                                # Tomcat + WAR image
+├── Jenkinsfile                               # CI/CD pipeline
+├── swarm-deploy.yml                          # Swarm service config
+└── README.md                                 # Documentation
