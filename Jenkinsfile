@@ -37,7 +37,7 @@ pipeline {
         }
         stage('Deploy to Swarm') {
             steps {
-                sh 'docker service update --image priyankadockrs/ecommerce-app:${BUILD_NUMBER} ecommerce-service || docker service create --name ecommerce-service --replicas 3 -p 8080:8080 priyankadockrs/ecommerce-app:${BUILD_NUMBER}'
+                sh 'docker service update --image priyankadockrs/ecommerce-app:${BUILD_NUMBER} ecommerce-service || docker service create --name ecommerce-service --replicas 3 -p 8081:8080 priyankadockrs/ecommerce-app:${BUILD_NUMBER}'
             }
         }
     }
