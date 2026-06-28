@@ -6,6 +6,11 @@ pipeline {
                 git 'https://github.com/PriyankaV-cmd/E-commerce-Application.git'
             }
         }
+        stage('Build with Maven') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
         stage('Build WAR') {
             steps {
                 sh 'mvn clean package'
