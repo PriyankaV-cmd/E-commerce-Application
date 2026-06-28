@@ -1,0 +1,2 @@
+E-Commerce Application Deployment
+Technology: GitHub, Maven, Jenkins, Docker, Docker Swarm, Tomcat 
