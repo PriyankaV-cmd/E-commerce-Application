@@ -22,7 +22,7 @@ pipeline {
                         usernameVariable: 'DOCKER_USER',
                         passwordVariable: 'DOCKER_PASS')]) {
                     sh '''
-                echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
+                echo $DOCKER_PASS | docker login -u priyankadockrs --password-stdin
                 docker push priyankadockrs/ecommerce-app:${BUILD_NUMBER}
                 docker tag priyankadockrs/ecommerce-app:${BUILD_NUMBER} priyankadockrs/ecommerce-app:latest
                 docker push priyankadockrs/ecommerce-app:latest
