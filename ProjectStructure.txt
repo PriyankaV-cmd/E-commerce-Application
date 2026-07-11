@@ -5,7 +5,7 @@ E-commerce-Application/
 ├── swarm-deploy.yml                         ✅ 2 replicas, auto-rollback on failure
 └── src/main/
     ├── java/com/ecommerce/
-    │   └── App.java                         ✅ HttpServlet
+    │   └── App.java                         ✅ HttpServlet on http://localhost:9090
     └── webapp/
         ├── index.jsp                        ✅ matches existing build output
         └── WEB-INF/
